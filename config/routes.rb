@@ -1,4 +1,12 @@
 BookLogger::Application.routes.draw do
+
+  devise_for :users
+
+  resources :books
+
+  #map.root :controller => "Books", :action => "index"
+  root :to => "books#welcome"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

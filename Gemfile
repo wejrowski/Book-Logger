@@ -6,7 +6,17 @@ group :development, :test do
   gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
   gem 'guard-rspec'
   gem 'guard-livereload'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'#not sure what htis is..
+  gem 'inherited_resources'
+  gem 'factory_girl' #using for Devise testing
+  gem 'guard-bundler' #https://github.com/guard/guard-bundler
+                      # guard init bundler (adds to guard file)
 end
+
+gem 'devise'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
